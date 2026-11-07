@@ -24,6 +24,7 @@ El acceso de staff y los roles son simulados. Las notificaciones se guardan y mu
 
 - `index.html`: navegación y vistas del prototipo.
 - `css/styles.css`: estilos y adaptación a pantallas móviles.
+- `assets/img/` y `assets/videos/`: logotipo, fotografías de actividades y videos mostrados en “Nosotros”.
 - `js/config/catalogos.js`: videojuegos, facultades y tamaños de bracket.
 - `js/structures/ParticipantPool.js`: puntajes, orden y corte de clasificados.
 - `js/structures/BracketEngine.js`: generación y avance de eliminación simple y doble.

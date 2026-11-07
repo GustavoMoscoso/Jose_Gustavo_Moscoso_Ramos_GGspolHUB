@@ -33,18 +33,7 @@ a { color: var(--cyan); }
 .brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--ink); font-size: 1.12rem; font-weight: 800; }
 .brand:hover { color: white; }
 .brand b { color: var(--cyan); }
-.brand-mark {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  background: var(--cyan);
-  color: #12222a;
-  border-radius: 11px;
-  font-size: .88rem;
-  font-weight: 900;
-  letter-spacing: -.08em;
-}
+.brand-logo { display: block; width: 42px; height: 42px; padding: 2px; border-radius: 11px; background: #fff; object-fit: contain; }
 .nav-link { color: #b6c2ce; font-size: .92rem; }
 .nav-link:hover, .nav-link.active { color: white; }
 .navbar-toggler { color: white; border: 1px solid var(--line); }
@@ -216,6 +205,14 @@ a { color: var(--cyan); }
 .stat-card .label { color: #a6b5c1; font-size: .82rem; }
 .empty-state { padding: 2.5rem 1rem; border: 1px dashed #465968; border-radius: 14px; color: #9caebb; text-align: center; }
 .todo-list { padding-left: 1.2rem; color: #b3c0cc; line-height: 1.9; }
+.media-gallery { margin-top: 2.5rem; }
+.media-event + .media-event { margin-top: 2.2rem; }
+.media-event h3 { margin: 0 0 .9rem; font-size: 1.05rem; font-weight: 800; }
+.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
+.media-card { overflow: hidden; margin: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.media-card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #101820; }
+.media-video-card video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #101820; }
+.media-card figcaption { padding: .75rem .9rem; color: #b3c0cc; font-size: .82rem; line-height: 1.45; }
 .small-muted { color: #8798a7; font-size: .77rem; }
 .site-footer { margin-top: 2rem; padding: 1.2rem 0; border-top: 1px solid #293946; color: #8595a3; font-size: .76rem; }
 .toast-region { position: fixed; z-index: 80; right: 1rem; bottom: 1rem; display: grid; width: min(92vw, 390px); gap: .6rem; }
