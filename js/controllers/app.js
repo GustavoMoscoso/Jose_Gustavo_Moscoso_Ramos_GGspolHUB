@@ -286,7 +286,8 @@
         '<div class="d-flex gap-2 mb-2"><input class="form-control form-control-sm" name="scoreA" type="number" min="0" step="1" required placeholder="Marcador A">' +
         '<input class="form-control form-control-sm" name="scoreB" type="number" min="0" step="1" required placeholder="Marcador B"></div>' +
         '<button class="btn btn-primary btn-sm w-100" type="submit">Guardar resultado</button></form>' : "";
-    var status = match.status === "COMPLETED" ? "Finalizada" : match.status === "NOT_NEEDED" ? "No requerida" :
+    var hasBye = Boolean((match.a && match.a.isBye) || (match.b && match.b.isBye));
+    var status = match.status === "COMPLETED" ? (hasBye ? "Pase directo" : "Finalizada") : match.status === "NOT_NEEDED" ? "No requerida" :
       isReady(match) ? "Lista para jugar" : "Esperando clasificados";
     return '<article class="match-card"><div class="match-head"><span>' + escapeHtml(match.id) + '</span><span>' + status + '</span></div>' +
       '<div class="match-slot ' + (winnerName === (match.a && match.a.id) ? "winner" : "") + (a.bye ? " bye" : "") + '">' +
